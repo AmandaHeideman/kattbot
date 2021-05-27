@@ -5,7 +5,6 @@ const { prefix, token } = require('./config.json');
 const client = new Discord.Client();
 const fetch = require('node-fetch');
 
-
 client.once('ready', () => {
 	console.log('Ready!');
 });
