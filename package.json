@@ -4,6 +4,7 @@
   "description": "a discord bot that shows cats",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "heideman.amanda@gmail.com",
