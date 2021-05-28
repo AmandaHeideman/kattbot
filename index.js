@@ -11,7 +11,8 @@ client.once('ready', () => {
 
 client.on('message', async message => {
 	if (message.content === prefix) {
-		const { file } = await fetch('https://aws.random.cat/meow').then(response => response.json());
+		const resp = await fetch('https://aws.random.cat/meow');
+		const { file } = await resp.json();
 		message.channel.send(file);
 	}
 });
